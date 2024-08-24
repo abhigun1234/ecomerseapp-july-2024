@@ -6,6 +6,7 @@ import Home from './Home';
 import ContectUs from './ContectUs';
 import NoPage from './NoPage';
 import Header from './Header';
+import AddPosts from './Addposts';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/about' element={<AboutUs></AboutUs>}></Route>
         <Route path='/contact' element={<ContectUs></ContectUs>}></Route>
+        <Route path='/addpost' element={<AddPosts></AddPosts>}></Route>
         <Route path='*' element={<NoPage></NoPage>}></Route>
       </Routes>
       </BrowserRouter>
