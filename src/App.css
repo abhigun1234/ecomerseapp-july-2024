@@ -1,7 +1,14 @@
 .App {
   text-align: center;
 }
-
+.product{
+  max-width: 100 px;
+  max-height: 100 px;
+}
+img{
+  max-width:200px;
+  height: 100px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
