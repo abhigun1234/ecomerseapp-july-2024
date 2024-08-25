@@ -24,7 +24,7 @@ function Header(props) {
         <Link to="/contact">Contct Us</Link>
         </li>
         <li class="nav-item">
-        <Link to="/addpost">Add Posts</Link>
+        <Link to="/addproduct">Add Product</Link>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>

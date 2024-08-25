@@ -3,16 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 function Home(props) {
     const [products,setProduct]=useState([])
-    useEffect(()=>{
-     axios.get('https://fakestoreapi.com/products').then(product=>{
-
-        // console.log("product",product.data)
-        setProduct(product.data)
-        console.log("products",products)
-
-     })
-
-    })
+  
     return (
         <div>
            {
