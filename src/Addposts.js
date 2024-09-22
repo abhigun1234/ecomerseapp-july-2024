@@ -27,14 +27,19 @@ function AddPosts() {
 
   return (
       <div className="App">
+
         <form onSubmit={(e) => handleSubmit(e)}>
-          <input  placeholder="Title" value={title}
+        <div class="postData">
+
+        <input  placeholder="Title" value={title}
             onChange={onTitleChange} required />
           <textarea placeholder="Body" value={body}
             onChange={onBodyChange} required />
           <button type="submit" >
            Create Post
           </button>
+        </div>
+          
         </form>
       </div>
   );

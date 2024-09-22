@@ -8,6 +8,11 @@ import NoPage from './NoPage';
 import Header from './Header';
 import AddPosts from './Addposts';
 import AddProduct from './AddProduct';
+import Headers from './Headers';
+import DashBoard from './DashBoard';
+import MyHeader from './MyHeader';
+import MyDashBoard from './MyDashBoard';
+import ProductList from './ProductList';
 
 function App() {
   return (
@@ -22,7 +27,7 @@ function App() {
         </Routes>
      
       </BrowserRouter> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <Header></Header>
       <Routes>
 
@@ -32,7 +37,27 @@ function App() {
         <Route path='/addproduct' element={<AddProduct></AddProduct>}></Route>
         <Route path='*' element={<NoPage></NoPage>}></Route>
       </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+        {/* <BrowserRouter>
+        <Headers></Headers>
+        <Routes>
+          <Route path='/' element={<DashBoard></DashBoard>}>
+
+          </Route>
+          <Route path='/about' element={<AboutUs></AboutUs>}></Route>
+          <Route path='/post' element={<AddPosts></AddPosts>}></Route>
+        </Routes>
+        </BrowserRouter> */}
+        <BrowserRouter>
+        <MyHeader></MyHeader>
+        <Routes>
+
+          <Route path='/' element={<MyDashBoard></MyDashBoard>}></Route>
+          <Route path='/product' element={<ProductList></ProductList>}></Route>
+          <Route path='/about' element={<AboutUs></AboutUs>}></Route>
+        </Routes>
+        </BrowserRouter>
+
     </div>
   );
 }

@@ -19,6 +19,7 @@ function AddProduct() {
         // headers.append('Authorization', 'Basic ' + base64.encode(username + ":" +  password));
         headers.append('Origin','http://localhost:3000');
         const requestOptions = {
+            crossDomain:true,
             method: "POST",
             headers: headers,
             body: JSON.stringify(data)
@@ -26,6 +27,11 @@ function AddProduct() {
         fetch("http://localhost:2004/addproduct", requestOptions)
             .then(response => response.title)
             .then(res => console.log(res));
+        // axios.post('url',data)/TouchEvent(res=>{
+
+        // }).catch(error=>{
+
+        // })
     };
 
     return (
