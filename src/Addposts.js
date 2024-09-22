@@ -6,7 +6,8 @@ function AddPosts() {
 
   const onTitleChange = e => setTitle(e.target.value);
   // function onTitleChange(e){
-  //   console.log("value",e.target.value)
+  //   setTitle(e.target.value)
+  //   console.log("value",e)
   // }
   const onBodyChange = e => setBody(e.target.value);
 
@@ -15,13 +16,16 @@ function AddPosts() {
     console.log("title",title)
     console.log("body",body)
     const data = { title, body };
+    console.log("data",data)
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
     };
     fetch("https://jsonplaceholder.typicode.com/posts", requestOptions)
-      .then(response => response.title)
+      .then(response => {
+        console.log("response",response)
+        })
       .then(res => console.log(res));
   };
 

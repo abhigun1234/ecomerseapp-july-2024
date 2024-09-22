@@ -23,6 +23,10 @@ function MyHeader(props) {
           {/* <a class="nav-link" href="#">Product</a> */}
           <Link class="nav-link" to="/about">About</Link>
         </li>
+        <li class="nav-item">
+          {/* <a class="nav-link" href="#">Product</a> */}
+          <Link class="nav-link" to="/post">Post</Link>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown

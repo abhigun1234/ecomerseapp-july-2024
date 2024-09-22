@@ -55,6 +55,7 @@ function App() {
           <Route path='/' element={<MyDashBoard></MyDashBoard>}></Route>
           <Route path='/product' element={<ProductList></ProductList>}></Route>
           <Route path='/about' element={<AboutUs></AboutUs>}></Route>
+          <Route path='/post' element={<AddPosts></AddPosts>}></Route>
         </Routes>
         </BrowserRouter>
 
